@@ -10,6 +10,7 @@
 }
 
 
+
 /* @media screen and (min-width: 790px) { */
 
   html {
@@ -45,27 +46,30 @@
   .header {
     text-align: right;
     font-size: 15px;
+    margin-top: 40px;
   }
 
   nav li {
     list-style-type: none;
     display: inline;
     color: var(--main-font-color);
+    padding-right: 3vw;
   }
 
   nav li a {
     text-decoration: none;
     color:inherit;
-    font-size: 14px;
+    font-size: 17px;
     font-family: var(--content-font-family);
     font-weight: 400;
+    transition-duration: .5s;
+    border-style:none;
   }
 
   nav li a:hover {
     border-color: #f5146e;
     border-style: solid;
-    border-radius: 10%;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
   }
 
 
@@ -105,6 +109,7 @@
     padding: 10px;
     cursor: pointer;
     font-family: var(--content-font-family);
+    transition-duration: 1s;
   }
 
   #contact-button:hover {
