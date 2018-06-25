@@ -19,8 +19,8 @@
     background-attachment:fixed;
     background-size: cover;
     background-position: center;
+    height: var(--fullscreen-height);
     width: var(--fullscreen-width);
-    height: var(--fulscreen-height);
   }
 
   body {
@@ -28,6 +28,7 @@
     width: inherit;
     color: #000000;
     font-family: var(--header-font-family);
+    display:block;
   }
 
   * {
@@ -36,10 +37,10 @@
     border: 0;
   }
 
-  ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
+  .outer-content {
+    flex-direction: column;
+  }
+
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* This is the navigation bar css*/
@@ -83,7 +84,8 @@
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
     font-family: var(--content-font-family);
-
+    flex-direction: column;
+    display:flex;
   }
 
   .inner-div {
@@ -93,7 +95,7 @@
   #contact {
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
-    text-align: left;
+    align-content:left;
     color: var(--main-font-color);
     font-size: 100px;
     font-family: var(--content-font-family);
@@ -110,6 +112,7 @@
     cursor: pointer;
     font-family: var(--content-font-family);
     transition-duration: 1s;
+    float:none;
   }
 
   #contact-button:hover {
@@ -119,11 +122,15 @@
 
 
   #about {
-
+    /* height: var(--fullscreen-height);
+    width: var(--fullscreen-width);
+    overflow: hidden; */
   }
 
   #projects {
-
+    /* height: var(--fullscreen-height);
+    width: var(--fullscreen-width);
+    overflow:hidden; */
   }
 
 /* } */
