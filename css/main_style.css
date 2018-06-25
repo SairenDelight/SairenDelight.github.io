@@ -1,30 +1,108 @@
-html{
-  background-image: url("images/sky_bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Shadows+Into+Light+Two');
+
+:root {
+  --header-font-family: 'Coming Soon', cursive;
+  --content-font-family: 'Concert One', cursive;
+  --main-font-color: white;
+  --main-font-size: 20px;
 }
 
-body{
-  color: #ffffff;
-}
 
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding:0;
-}
+/* @media screen and (min-width: 790px) { */
 
-li {
-  display: inline;
-}
+  html, body {
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    font-family: var(--header-font-family);
+  }
 
-a {
-  text-decoration: none;
-  color:inherit;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 
-.header{
-  text-align: right;
-  font-size: 15px;
-}
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /* This is the navigation bar css*/
+  .header {
+    text-align: right;
+    font-size: 15px;
+  }
+
+  nav li {
+    list-style-type: none;
+    display: inline;
+    color: var(--main-font-color);
+  }
+
+  nav li a {
+    text-decoration: none;
+    color:inherit;
+    font-size: 14px;
+    font-family: var(--content-font-family);
+    font-weight: 400;
+  }
+
+  nav li a:hover {
+    border-color: #f5146e;
+    border-style: solid;
+    border-radius: 10%;
+    border-width: 2px;
+  }
+
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /* This is the body section with content*/
+
+  .content {
+    display: flex;
+    background-color: white;
+    opacity: .8;
+    margin-bottom: 40px;
+    height: 20%;
+  }
+
+  .parallax {
+    background-image: url("images/beach-candle-candlelight.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    height:inherit;
+    width:inherit;
+  }
+
+  #contact {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 100px;
+    min-height: 100%;
+  }
+
+  #contact-button {
+    border: 5px solid;
+    border-color: var(--main-font-color);
+    background-color: transparent;
+    color: var(--main-font-color);
+    font-size: var(--main-font-size);
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  #about {
+
+  }
+
+  #projects {
+
+  }
+
+  span {
+    text-align: justify;
+  }
+/* } */
