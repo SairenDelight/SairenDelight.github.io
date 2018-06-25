@@ -5,8 +5,8 @@
   --content-font-family: 'Concert One', cursive;
   --main-font-color: white;
   --main-font-size: 20px;
-  --fullscreen-height: 100vh;
-  --fullscreen-width: 100vw;
+  --fullscreen-height: 100%;
+  --fullscreen-width: 100%;
 }
 
 
@@ -24,11 +24,11 @@
   }
 
   body {
-    height: inherit;
-    width: inherit;
+    height: var(--fullscreen-height);
+    width: var(--fullscreen-width);
     color: #000000;
     font-family: var(--header-font-family);
-    display:block;
+    display:inline-block;
   }
 
   * {
@@ -37,10 +37,9 @@
     border: 0;
   }
 
-  .outer-content {
-    flex-direction: column;
+  div {
+    clear:both;
   }
-
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* This is the navigation bar css*/
@@ -78,18 +77,22 @@
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* This is the body section with content*/
 
+  .container {
+    display:flex;
+    flex-direction: column;
+  }
+
   .content {
     background-color: white;
     opacity: .8;
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
     font-family: var(--content-font-family);
-    flex-direction: column;
-    display:flex;
+    display:inline-block;
   }
 
   .inner-div {
-    padding: 25vh;
+    padding: 20% 20% 20% 15%;
   }
 
   #contact {
@@ -99,6 +102,20 @@
     color: var(--main-font-color);
     font-size: 100px;
     font-family: var(--content-font-family);
+  }
+
+  section div div span a {
+    text-decoration: none;
+    color:inherit;
+    transition-duration: .5s;
+    border-style:none;
+    border-color:#ff82b8;
+  }
+
+  section div div span a:hover {
+    border-color: #f5146e;
+    border-style: solid;
+    border-bottom-width: 1px;
   }
 
   #contact-button {
@@ -112,7 +129,6 @@
     cursor: pointer;
     font-family: var(--content-font-family);
     transition-duration: 1s;
-    float:none;
   }
 
   #contact-button:hover {
@@ -122,15 +138,13 @@
 
 
   #about {
-    /* height: var(--fullscreen-height);
+    height: var(--fullscreen-height);
     width: var(--fullscreen-width);
-    overflow: hidden; */
   }
 
   #projects {
-    /* height: var(--fullscreen-height);
+    height: var(--fullscreen-height);
     width: var(--fullscreen-width);
-    overflow:hidden; */
   }
 
 /* } */
