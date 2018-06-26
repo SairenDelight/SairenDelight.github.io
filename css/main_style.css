@@ -35,57 +35,55 @@
     margin: 0;
     padding: 0;
     border: 0;
-  }
-
-  div {
     clear:both;
   }
-
-  a, button {
-    outline: 0;
+  
+  h2 {
+    text-align: center;
   }
 
-  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  /* This is the navigation bar css*/
-  .header {
-    text-align: right;
-    font-size: 15px;
-    margin-top: 40px;
+  section {
+    height: inherit;
+    width: inherit;
   }
-
-  nav li {
-    list-style-type: none;
-    display: inline;
-    color: var(--main-font-color);
-    padding-right: 3vw;
-  }
-
-  nav li a {
-    text-decoration: none;
-    color:inherit;
-    font-size: 17px;
-    font-family: var(--content-font-family);
-    font-weight: 400;
-    transition-duration: .5s;
-    border-style:none;
-  }
-
-  nav li a:hover {
-    border-color: #f5146e;
-    border-style: solid;
-    border-bottom-width: 1px;
-  }
-
-
-
-  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  /* This is the body section with content*/
 
   .container {
     display:flex;
     flex-direction: column;
   }
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~THE NAVIGATION BAR CSS~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    .header {
+      text-align: right;
+      font-size: 15px;
+      margin-top: 40px;
+    }
 
+      nav li {
+        list-style-type: none;
+        display: inline;
+        color: var(--main-font-color);
+        padding-right: 3vw;
+      }
+
+        nav li a {
+          text-decoration: none;
+          color:inherit;
+          font-size: 17px;
+          font-family: var(--content-font-family);
+          font-weight: 400;
+          transition-duration: .5s;
+          border-style:none;
+        }
+
+        nav li a:hover {
+          border-color: #f5146e;
+          border-style: solid;
+          border-bottom-width: 1px;
+        }
+
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~THIS IS THE CONTACT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .content {
     background-color: white;
     opacity: .8;
@@ -95,60 +93,72 @@
     display:inline-block;
   }
 
-  .inner-div {
-    padding: 20% 20% 20% 15%;
-  }
+    #contact {
+      height: var(--fullscreen-height);
+      width: var(--fullscreen-width);
+      align-content:left;
+      color: var(--main-font-color);
+      font-size: 100px;
+      font-family: var(--content-font-family);
+    }
 
-  #contact {
-    height: var(--fullscreen-height);
-    width: var(--fullscreen-width);
-    align-content:left;
-    color: var(--main-font-color);
-    font-size: 100px;
-    font-family: var(--content-font-family);
-  }
+      .inner-div {
+        padding: 20% 20% 20% 15%;
+      }
 
-  section div div span a {
-    text-decoration: none;
-    color:inherit;
-    transition-duration: .5s;
-    border-style:none;
-    border-color:#ff82b8;
-    outline: 0;
-  }
+        section div div span a {
+          text-decoration: none;
+          color:inherit;
+          transition-duration: .5s;
+          border-style:none;
+          border-color:#ff82b8;
+          outline: 0;
+        }
 
-  section div div span a:hover {
-    border-color: #f5146e;
-    border-style: solid;
-    border-bottom-width: 1px;
-  }
+        section div div span a:hover {
+          border-color: #f5146e;
+          border-style: solid;
+          border-bottom-width: 1px;
+        }
 
-  #contact-button {
-    border: 4px solid;
-    border-radius: 10%;
-    border-color: var(--main-font-color);
-    background-color: transparent;
-    color: var(--main-font-color);
-    font-size: 30%;
-    padding: 10px;
-    cursor: pointer;
-    font-family: var(--content-font-family);
-    transition-duration: 1s;
-  }
+          #contact-button {
+            border: 4px solid;
+            border-radius: 10%;
+            border-color: var(--main-font-color);
+            background-color: transparent;
+            color: var(--main-font-color);
+            font-size: 30%;
+            padding: 10px;
+            cursor: pointer;
+            font-family: var(--content-font-family);
+            transition-duration: 1s;
+          }
 
-  #contact-button:hover {
-    background-color: white;
-    color: #7a82a7;
-  }
+          #contact-button:hover {
+            background-color: white;
+            color: #7a82a7;
+          }
 
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~THE ABOUT SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   #about {
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
   }
 
+
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~THE PROJECT SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   #projects {
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
   }
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  footer {
+    color: var(--main-font-color);
+    text-align: center;
+  }
 /* } */
