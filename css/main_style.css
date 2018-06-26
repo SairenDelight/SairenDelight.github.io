@@ -41,6 +41,10 @@
     clear:both;
   }
 
+  a, button {
+    outline: 0;
+  }
+
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   /* This is the navigation bar css*/
   .header {
@@ -110,6 +114,7 @@
     transition-duration: .5s;
     border-style:none;
     border-color:#ff82b8;
+    outline: 0;
   }
 
   section div div span a:hover {
@@ -135,7 +140,6 @@
     background-color: white;
     color: #7a82a7;
   }
-
 
   #about {
     height: var(--fullscreen-height);
