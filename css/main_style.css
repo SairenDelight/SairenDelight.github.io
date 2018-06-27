@@ -7,6 +7,7 @@
   --main-font-size: 20px;
   --fullscreen-height: 100%;
   --fullscreen-width: 100%;
+  --blue: #75aaff;
 }
 
 
@@ -37,7 +38,7 @@
     border: 0;
     clear:both;
   }
-  
+
   h2 {
     text-align: center;
   }
@@ -51,6 +52,7 @@
     display:flex;
     flex-direction: column;
   }
+
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~THE NAVIGATION BAR CSS~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     .header {
       text-align: right;
@@ -145,7 +147,32 @@
   #about {
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
+    position:relative;
   }
+    #timeline-container {
+      padding: 0 20% 0 20%;
+    }
+      #timeline-container::after{
+         content:'';
+         width: 6px;
+         background-color: var(--blue);
+         position: absolute;
+         top: 5%;
+         bottom: 0;
+         left: 50%;
+      }
+
+      .event-container {
+        width: 40%;
+      }
+
+      .right {
+        padding-left: 60%;
+      }
+
+      .left {
+        padding-right: 50%;
+      }
 
 
 
@@ -154,11 +181,25 @@
   #projects {
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
+    position:relative;
+    text-align: center;
   }
+
+    .project-container {
+      width: inherit;
+      display: flex;
+      flex-direction: row;
+    }
+
+      .project-content {
+        width: 20%;
+        height: 10%;
+      }
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   footer {
     color: var(--main-font-color);
     text-align: center;
+    height: 50%;
   }
 /* } */
