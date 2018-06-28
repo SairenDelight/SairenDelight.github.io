@@ -88,7 +88,6 @@
   /*~~~~~~~~~~~~~~~~~~~~~THIS IS THE CONTACT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .content {
     background-color: white;
-    opacity: .8;
     height: var(--fullscreen-height);
     width: var(--fullscreen-width);
     font-family: var(--content-font-family);
@@ -145,7 +144,6 @@
 
   /*~~~~~~~~~~~~~~~~~~~~~~~THE ABOUT SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   #about {
-    height: var(--fullscreen-height);
     width: var(--fullscreen-width);
     position:relative;
   }
@@ -155,9 +153,10 @@
       #timeline-container::after{
          content:'';
          width: 6px;
+         height: 90%;
          background-color: var(--blue);
          position: absolute;
-         top: 5%;
+         top: 4.5%;
          bottom: 0;
          left: 50%;
       }
@@ -183,18 +182,24 @@
     width: var(--fullscreen-width);
     position:relative;
     text-align: center;
+    margin:auto;
   }
 
     .project-container {
       width: inherit;
       display: flex;
       flex-direction: row;
+      justify-content: center;
     }
 
       .project-content {
-        width: 20%;
-        height: 10%;
+        padding: 10%;
       }
+
+        .project-content a img {
+          width: 100%;
+          height: 90%;
+        }
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   footer {
