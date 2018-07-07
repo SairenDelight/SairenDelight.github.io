@@ -65,7 +65,7 @@
       margin-top: 40px;
     }
 
-      nav li {
+      nav ul li {
         list-style-type: none;
         display: inline;
         color: var(--main-font-color);
