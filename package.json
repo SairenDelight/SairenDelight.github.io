@@ -2,7 +2,7 @@
   "name": "mysite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https:wwww.sairendelight.github.io",
+  "homepage": "https://sairendelight.github.io/",
   "dependencies": {
     "async": "^3.0.1",
     "gh-pages": "^2.0.1",
