@@ -1,0 +1,31 @@
+.home-container {
+    display:block;
+    position:absolute;
+    left: 5%;
+    bottom:10%;
+}
+
+#intro-text {
+    font-size: 9em;
+    text-shadow: 6px 5px var(--secondary-color);
+}
+
+.font-24 {
+    font-size: 1.8em;
+}
+
+
+
+.hover-fx:hover {
+    text-decoration:underline;
+}
+
+.caption-color {
+    color:var(--orange);
+}
+
+@media only screen and (max-device-width : 1024px) {  
+    
+ 
+
+}

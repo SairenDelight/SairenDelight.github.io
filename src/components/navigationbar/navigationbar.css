@@ -1,0 +1,76 @@
+.highlight {
+    fill:var(--main-color);
+    opacity: 1;
+}
+
+.highlight:hover {
+    opacity: .6;
+}
+
+.navigation-bar {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--main-color);
+    position:fixed; 
+    right: 0px; 
+    height: 100%;
+    z-index: 10;
+}
+
+
+.vertical-flex-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+#main-logo {
+    flex-grow:0;
+}
+
+.icons {
+    flex-grow: 1;
+}
+
+
+
+@media only screen and (max-device-width :  1024px) {    
+
+    .navigation-bar {
+        border-width: 1px;
+        border-style: solid;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: var(--main-color);
+        border-left-color: transparent;
+        position:fixed; 
+        width:100%;
+        left: 0px; /* This will place the nav bar to the left of the screen*/
+        top: 0px; /* Place to the top of screen */
+        height:inherit;
+        display:block;
+        z-index: 10;
+    }
+    
+    
+    .vertical-flex-container {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    #main-logo {
+        flex-grow:0;
+    }
+    
+    .icons {
+        flex-grow: 1;
+    }
+    
+    
+}
